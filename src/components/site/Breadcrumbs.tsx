@@ -15,7 +15,7 @@ export function Breadcrumbs({ items }: { items: Crumb[] }) {
                 {item.name}
               </span>
             ) : (
-              <Link to={item.path} className="hover:text-primary">
+              <Link to={item.path as "/"} className="hover:text-primary">
                 {item.name}
               </Link>
             )}
