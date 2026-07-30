@@ -87,7 +87,7 @@ function ServiceDetail() {
               What’s included in our {service.name.toLowerCase()}
             </h2>
             <ul className="mt-5 grid gap-3 sm:grid-cols-2">
-              {service.bullets.map((b) => (
+              {service.bullets.map((b: string) => (
                 <li
                   key={b}
                   className="flex items-start gap-3 rounded-2xl border border-border bg-card p-4 text-sm shadow-soft"
