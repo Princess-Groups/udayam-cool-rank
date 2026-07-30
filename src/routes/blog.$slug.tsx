@@ -3,7 +3,7 @@ import { Section } from "@/components/site/Section";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { CtaBand, InternalLinkRow } from "@/components/site/Blocks";
 import { LeadForm } from "@/components/site/LeadForm";
-import { posts, postsBySlug } from "@/data/blog";
+import { posts, postsBySlug, type BlogPost } from "@/data/blog";
 import { services } from "@/data/site";
 import { breadcrumbSchema, canonical, ldScript, pageMeta } from "@/lib/seo";
 
@@ -80,17 +80,17 @@ function BlogPostPage() {
             </p>
             <p className="mt-6 text-lg text-muted-foreground">{post.description}</p>
 
-            {post.body.map((block) => (
+            {post.body.map((block: BlogPost["body"][number]) => (
               <section key={block.heading} className="mt-10">
                 <h2 className="font-display text-2xl font-bold">{block.heading}</h2>
-                {block.paragraphs.map((para) => (
+                {block.paragraphs.map((para: string) => (
                   <p key={para.slice(0, 40)} className="mt-4 text-muted-foreground">
                     {para}
                   </p>
                 ))}
                 {block.list && (
                   <ul className="mt-4 grid gap-2">
-                    {block.list.map((li) => (
+                    {block.list.map((li: string) => (
                       <li
                         key={li}
                         className="rounded-2xl border border-border bg-card p-4 text-sm shadow-soft"
