@@ -407,7 +407,9 @@ export const services: Service[] = [
   },
 ];
 
-export const servicesBySlug = Object.fromEntries(services.map((s) => [s.slug, s]));
+export const servicesBySlug: Record<string, Service> = Object.fromEntries(
+  services.map((s) => [s.slug, s]),
+);
 
 export type Brand = { slug: string; name: string; note: string };
 
@@ -426,7 +428,9 @@ export const brands: Brand[] = [
   { slug: "ifb", name: "IFB", note: "Inverter splits with rapid cooling, full spares support." },
 ];
 
-export const brandsBySlug = Object.fromEntries(brands.map((b) => [b.slug, b]));
+export const brandsBySlug: Record<string, Brand> = Object.fromEntries(
+  brands.map((b) => [b.slug, b]),
+);
 
 export type Area = { slug: string; name: string; blurb: string; pin?: string };
 
@@ -447,7 +451,9 @@ export const areas: Area[] = [
   { slug: "thingal-nagar", name: "Thingal Nagar", blurb: "Quick response for residential AC breakdowns." },
 ];
 
-export const areasBySlug = Object.fromEntries(areas.map((a) => [a.slug, a]));
+export const areasBySlug: Record<string, Area> = Object.fromEntries(
+  areas.map((a) => [a.slug, a]),
+);
 
 export const reviews = [
   { name: "Sathish Kumar", area: "Vadasery", rating: 5, text: "Called at 10 AM, technician came by noon and found a gas leak the previous guy missed. Cooling is like new now. Genuinely fair pricing." },

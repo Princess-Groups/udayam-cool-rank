@@ -369,4 +369,6 @@ export const posts: BlogPost[] = [
   },
 ];
 
-export const postsBySlug = Object.fromEntries(posts.map((p) => [p.slug, p]));
+export const postsBySlug: Record<string, BlogPost> = Object.fromEntries(
+  posts.map((p) => [p.slug, p]),
+);
