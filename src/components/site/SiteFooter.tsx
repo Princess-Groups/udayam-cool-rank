@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, MapPin, Phone, Snowflake } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { areas, business, callHref, services } from "@/data/site";
+import logoAsset from "@/assets/udayam-logo.png.asset.json";
 
 export function SiteFooter() {
   return (
