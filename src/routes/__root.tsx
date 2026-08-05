@@ -93,7 +93,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Udayam AC Nagercoil" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "theme-color", content: "#1d4ed8" },
+      { name: "theme-color", content: "#F4B400" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
