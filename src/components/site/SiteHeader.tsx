@@ -1,8 +1,9 @@
 import { Link } from "@tanstack/react-router";
-import { Menu, Phone, Snowflake } from "lucide-react";
+import { Menu, Phone } from "lucide-react";
 import { useState } from "react";
 import { business, callHref } from "@/data/site";
 import { Button } from "@/components/ui/button";
+import logoAsset from "@/assets/udayam-logo.png.asset.json";
 import {
   Sheet,
   SheetContent,
