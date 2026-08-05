@@ -21,10 +21,12 @@ export const business = {
     "https://www.google.com/maps?q=Nagercoil,+Tamil+Nadu&output=embed",
 };
 
-export const callHref = `tel:${business.phone}`;
 export const whatsappHref = `https://wa.me/${business.whatsapp}?text=${encodeURIComponent(
   "Hi Udayam AC, I need AC service in Nagercoil.",
 )}`;
+// Every "Call Now" action opens WhatsApp chat directly.
+export const callHref = whatsappHref;
+export const telHref = `tel:${business.phone}`;
 
 export type Service = {
   slug: string;
