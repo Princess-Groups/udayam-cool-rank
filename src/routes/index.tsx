@@ -132,7 +132,7 @@ function Home() {
               breakdown calls for homes, clinics, hotels and businesses.
             </p>
           </div>
-          <Button asChild size="lg">
+          <Button asChild size="lg" variant="cta">
             <a href={callHref}>
               <Phone className="size-4" aria-hidden="true" />
               Emergency Call

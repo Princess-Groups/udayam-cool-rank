@@ -2,9 +2,9 @@ export const business = {
   name: "Udayam AC",
   legalName: "Udayam AC Nagercoil",
   tagline: "Fast • Reliable • Affordable AC Services",
-  phone: "+919876543210",
-  phoneDisplay: "+91 98765 43210",
-  whatsapp: "919876543210",
+  phone: "+919790589058",
+  phoneDisplay: "+91 97905 89058",
+  whatsapp: "919790589058",
   email: "info@udayamac.in",
   street: "Vadasery Main Road",
   city: "Nagercoil",
@@ -21,10 +21,12 @@ export const business = {
     "https://www.google.com/maps?q=Nagercoil,+Tamil+Nadu&output=embed",
 };
 
-export const callHref = `tel:${business.phone}`;
 export const whatsappHref = `https://wa.me/${business.whatsapp}?text=${encodeURIComponent(
   "Hi Udayam AC, I need AC service in Nagercoil.",
 )}`;
+// Every "Call Now" action opens WhatsApp chat directly.
+export const callHref = whatsappHref;
+export const telHref = `tel:${business.phone}`;
 
 export type Service = {
   slug: string;
