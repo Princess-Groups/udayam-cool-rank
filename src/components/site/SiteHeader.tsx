@@ -31,18 +31,18 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-border/70 glass">
       <div className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-4 py-3">
         <Link to="/" className="flex min-w-0 items-center gap-2.5" aria-label={`${business.name} home`}>
-          <span className="grid size-10 shrink-0 place-items-center rounded-xl gradient-hero text-primary-foreground shadow-soft">
-            <Snowflake className="size-5" aria-hidden="true" />
-          </span>
-          <span className="min-w-0">
-            <span className="block truncate font-display text-lg font-bold leading-tight">
-              {business.name}
-            </span>
+          <img
+            src={logoAsset.url}
+            alt={`${business.name} logo`}
+            className="h-11 w-auto shrink-0 rounded-md"
+          />
+          <span className="min-w-0 hidden sm:block">
             <span className="block truncate text-[11px] text-muted-foreground">
               Nagercoil • {business.tagline}
             </span>
           </span>
         </Link>
+
 
         <div className="flex items-center gap-2">
           <Button asChild size="sm" className="hidden sm:inline-flex">
