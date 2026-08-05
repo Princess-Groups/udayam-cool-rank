@@ -60,8 +60,10 @@ export function SiteHeader() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[86vw] max-w-sm">
               <SheetHeader>
-                <SheetTitle className="font-display">{business.name}</SheetTitle>
-              </SheetHeader>
+                <SheetTitle className="font-display">
+                  <img src={logoAsset.url} alt={`${business.name} logo`} className="h-10 w-auto rounded-md" />
+                </SheetTitle>
+
               <nav className="mt-2 flex flex-col gap-1 px-4 pb-8">
                 {nav.map((item) => (
                   <Link
