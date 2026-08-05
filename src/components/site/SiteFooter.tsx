@@ -9,11 +9,14 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <div className="flex items-center gap-2.5">
-            <span className="grid size-10 place-items-center rounded-xl gradient-hero text-primary-foreground">
-              <Snowflake className="size-5" aria-hidden="true" />
-            </span>
-            <span className="font-display text-lg font-bold">{business.name}</span>
+            <img
+              src={logoAsset.url}
+              alt={`${business.name} logo`}
+              className="h-11 w-auto rounded-md"
+              loading="lazy"
+            />
           </div>
+
           <p className="mt-4 text-sm text-muted-foreground">
             {business.tagline}. Certified AC installation, repair, gas filling and AMC across
             Nagercoil and Kanyakumari district since {2026 - business.experienceYears}.
