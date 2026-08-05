@@ -63,8 +63,10 @@ export function SiteHeader() {
                 <SheetTitle className="font-display">
                   <img src={logoAsset.url} alt={`${business.name} logo`} className="h-10 w-auto rounded-md" />
                 </SheetTitle>
+              </SheetHeader>
 
               <nav className="mt-2 flex flex-col gap-1 px-4 pb-8">
+
                 {nav.map((item) => (
                   <Link
                     key={item.to}
