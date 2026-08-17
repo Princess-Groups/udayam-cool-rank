@@ -3,7 +3,11 @@ import { Menu, Phone } from "lucide-react";
 import { useState } from "react";
 import { business, callHref } from "@/data/site";
 import { Button } from "@/components/ui/button";
+<<<<<<< HEAD
 import logoAsset from "@/assets/udayam-logo.png";
+=======
+import logoAsset from "@/assets/udayam-logo.png.asset.json";
+>>>>>>> origin/main
 import {
   Sheet,
   SheetContent,
@@ -33,7 +37,11 @@ export function SiteHeader() {
       <div className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-4 py-3">
         <Link to="/" className="flex min-w-0 items-center gap-2.5" aria-label={`${business.name} home`}>
           <img
+<<<<<<< HEAD
             src={logoAsset}
+=======
+            src={logoAsset.url}
+>>>>>>> origin/main
             alt={`${business.name} logo`}
             className="h-11 w-auto shrink-0 rounded-md"
           />
@@ -61,7 +69,11 @@ export function SiteHeader() {
             <SheetContent side="right" className="w-[86vw] max-w-sm">
               <SheetHeader>
                 <SheetTitle className="font-display">
+<<<<<<< HEAD
                   <img src={logoAsset} alt={`${business.name} logo`} className="h-10 w-auto rounded-md" />
+=======
+                  <img src={logoAsset.url} alt={`${business.name} logo`} className="h-10 w-auto rounded-md" />
+>>>>>>> origin/main
                 </SheetTitle>
               </SheetHeader>
 

@@ -1,7 +1,11 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { areas, business, callHref, services } from "@/data/site";
+<<<<<<< HEAD
 import logoAsset from "@/assets/udayam-logo.png";
+=======
+import logoAsset from "@/assets/udayam-logo.png.asset.json";
+>>>>>>> origin/main
 
 export function SiteFooter() {
   return (
@@ -10,7 +14,11 @@ export function SiteFooter() {
         <div>
           <div className="flex items-center gap-2.5">
             <img
+<<<<<<< HEAD
               src={logoAsset}
+=======
+              src={logoAsset.url}
+>>>>>>> origin/main
               alt={`${business.name} logo`}
               className="h-11 w-auto rounded-md"
               loading="lazy"
